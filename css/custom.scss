@@ -1,0 +1,477 @@
+---
+# Custom CSS
+---
+
+// @media values
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+$nav-height: 100px;
+
+@import 'detail-custom';
+
+body {
+  padding-top: 90px;
+  background-color: #edece0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  @media screen and (max-width: $screen-xs-max) {
+    padding-top: 3px;
+  }
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 50px;
+  height: 100%;
+
+}
+.logo {
+  background-image: url("{{ site.baseurl }}/images/ajg-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  margin-left: 25px;
+  height: 60px;
+  width: 270px;
+  @media screen and (max-width: $screen-xs-max) {
+    background-image: url("{{ site.baseurl }}/images/ajg-logo-m.png");
+    width: 200px;
+    height: 48px;
+  }
+}
+#call-us {
+  color: #fff;
+  text-align: right;
+  vertical-align: middle;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #121212;
+  padding: 6px 65px 0px 0px;
+  z-index: 9999;
+}
+.close-div {
+  color: #fff;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.navbar-default .navbar-nav {
+  .active {
+    a {
+      color: #faf3e1;
+      background: none;
+      border-bottom: 5px solid #6F1416;
+    &:hover {
+      color: #fff;
+      background: none;
+    }
+  }
+}
+  li a {
+    color: #faf3e1;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 10px 5px 10px;
+  &:hover {
+    color: #fff;
+  &:active {
+    color: #fff;
+  }
+  }
+}
+}
+.navbar-default .navbar-toggle {
+  position: absolute;
+  border: 0;
+  top: 0;
+  right: 0;
+  margin: 0;
+  &:focus {
+    background: none !important;
+  }
+  &:hover {
+    background: none !important;
+  }
+  &:active{
+    background: none !important;
+  }
+  &:visited{
+    background: none !important;
+  }
+  .icon-bar {
+    background-color: #fff !important;
+    &:hover {
+      background-color: #F7F7F7 !important;
+    }
+  }
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  padding-top: 0px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+  background-color: #92293b;
+  margin:0px auto 0px auto;
+  border: 0;
+  @media screen and (max-width: $screen-xs-max) {
+    height: 48px;
+}
+}
+.navbar-header {
+  @media screen and (max-width: $screen-xs-max) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .icon-bar {
+      color: #fff;
+    }
+  }
+}
+.nav2 {
+  margin: 10px 0px 0px 75px;
+  font-family: 'Questrial', sans-serif;
+}
+.tagline {
+  margin-top: 0px !important;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #faf3e1;
+  font-size: 3em;
+  width: 100%;
+  padding-top: 25px;
+  background-color: #92293b;
+  height: 150px;
+  border: 3px solid #edece0;
+  display: block;
+  border-bottom: 0;
+  @media screen and (max-width: $screen-xs-max) {
+    color: #fff;
+    height: 225px;
+    background: url("{{ site.baseurl }}/images/sacr-bridge-m.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 10px 0 10px 0;
+  }
+  .btn {
+    color: #fff;
+    margin-top: 10px;
+    background-color: #941b1e;
+    border-radius: 15px;
+    padding: 5px 25px 5px 25px;
+    @media screen and (max-width: 400px) {
+      font-size: .25em !important;
+    }
+    @media screen and (max-width: $screen-xs-max) {
+      padding: 9px !important;
+      margin: 15px 0 15px 0 !important;
+    }
+    @media screen and (max-width: $screen-md-max) {
+      font-size: .55em;
+      border-radius: 25px;
+      margin: 20px 0 25px 0;
+      padding: 4px;
+    }
+}
+@media screen and (max-width: $screen-md-max) {
+  font-size: 3.5em ;
+  height: 400px;
+}
+@media screen and (max-width: 400px) {
+  line-height: 22px !important;
+  padding-top: 5px;
+  margin-top: 0px;
+  height: 225px;
+}
+}
+.tag {
+  @media screen and (max-width: 400px) {
+    font-size: .45em;
+  }
+}
+#panel-menu {
+  max-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 9999;
+  background-color: #70161D;
+  padding: 15px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  -moz-box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+  text-align: center;
+  a {
+    color: #fff;
+    &:hover {
+      color: #666;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 1.25em !important;
+    padding: 5px !important;
+    ul li {
+      padding: 5px 0 5px 0;
+    }
+}
+@media screen and (max-width: $screen-md-max) {
+  font-size: 2em;
+  padding: 30px;
+  ul li {
+    padding: 15px 0 15px 0;
+  }
+}
+}
+.menu-btn {
+  color: #fff;
+  font-size: 1.5em;
+}
+.bottom-bar {
+  background-color: #6f1416;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.services {
+  overflow: hidden;
+  font-size: 1.5em;
+  background-color: rgba(18,18,18,1);
+  height: 50px;
+  border: 2px solid #FFFAF0;
+}
+.learn-more {
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: .6em;
+}
+.box2 {
+  background-color: #92293b;
+  height: 300px;
+  border: 3px solid #edece0;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (max-width: $screen-md-max) {
+    height: 250px;
+    background-color: #70161D;
+  }
+  @media screen and (max-width: 400px) {
+    height: 150px;
+  }
+}
+.quote {
+  text-align: left;
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 2.75em;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  right: 0px;
+  width: 100%;
+  padding: 15px;
+  line-height: 40px;
+  @media screen and (max-width: 400px) {
+    height: 150px;
+    font-size: 1.25em !important;
+    line-height: 22px !important;
+    padding: 15px 15px 10px 15px !important;
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    text-align: right;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 1.25em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px 10px 30px;
+    line-height: 25px;
+  }
+  @media screen and (max-width: $screen-md-max) {
+    text-align: right;
+    font-size: 2.4em;
+    line-height: 40px;
+    padding: 20px 15px 10px 10px;
+  }
+}
+.box1 {
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 300px;
+  border: 3px solid #edece0;
+  padding: 0;
+  background-image: url("{{ site.baseurl }}/images/loyal-shake.jpg");
+  @media screen and (max-width: $screen-md-max) {
+    height: 250px;
+    background-image: url("{{ site.baseurl }}/images/ajg-pic.jpg");
+  }
+  @media screen and (max-width: 400px) {
+    height: 150px;
+    background-image: url("{{ site.baseurl }}/images/ajg-pic.jpg");
+  }
+}
+#carouse-2 {
+  height: 150px;
+  text-align: center;
+}
+.carousel-inner {
+  width: 385px;
+  height: 244px;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: $screen-xs-max) {
+    text-align: center !important;
+    margin: auto;
+    width: 100%;
+    }
+}
+.carousel-inner img {
+  margin: auto;
+}
+.carousel {
+  width: 100%;
+  margin: 0;
+  padding:0;
+  position: static;
+}
+.item {
+  width: 100%;
+  height: auto;
+  a {
+    color: #fff;
+    font-weight: 400;
+  }
+}
+.item-content {
+  word-wrap: break-word;
+  font-family: 'Opan Sans', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  padding: 20px 50px 10px 50px;
+  z-index: 11;
+  @media screen and (max-width: $screen-xs-max) {
+    left: 0;
+    top: 60px;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.75em;
+    margin: auto;
+    width: 100%;
+  }
+  @media screen and (max-width: 400px) {
+    left: 0;
+    top: 50px;
+    padding: 2px;
+    font-size: .6em;
+    margin: auto;
+    width: 100%;
+  }
+}
+.item-title {
+  font-weight: 700;
+  font-size: 1.6em;
+  @media screen and (max-width: $screen-xs-max) {
+    text-align: center !important;
+}
+}
+.item-snippet {
+  color: #cdcdcd;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+.box3 {
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  background-color: #B63A3D;
+  border: 3px solid #edece0;
+  @media screen and (max-width: $screen-md-max) {
+    height: 250px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 150px;
+  }
+}
+.box4 {
+  height: 250px;
+  border: 3px solid #edece0;
+  background-image: url("{{ site.baseurl }}/images/ajg-pic.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  @media screen and (max-width: $screen-xs-max) {
+    height: 150px;
+    background-color: #92293b;
+    background-image: none;
+  }
+  @media screen and (max-width: $screen-md-max) {
+    height: 250px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 150px;
+    background-color: #92293b;
+    background-image: none;
+    height: 150px;
+  }
+}
+.box5 {
+  padding: 0;
+  overflow: hidden;
+  height: 250px;
+  background: url("{{ site.baseurl }}/images/sacr-bridge.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border: 3px solid #edece0;
+  @media screen and (max-width: $screen-xs-max) {
+    height: 150px;
+    background-image: url("{{ site.baseurl }}/images/loyal-shake.jpg");
+  }
+  @media screen and (max-width: $screen-md-max) {
+    height: 250px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 150px;
+  }
+}
+.main-btn {
+  color: #fff;
+}
+.site-footer {
+  margin-top: 5px;
+  margin-left: 3.25%;
+  color: #666;
+}

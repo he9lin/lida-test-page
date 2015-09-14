@@ -1,0 +1,15 @@
+# Site settings
+title: The Law Office of Anthony J. Garafola
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Small Firm Attention, Big Firm Results
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username: null
+github_username: null
+
+# Build settings
+markdown: kramdown
+highligher: null
+kramdown:
+  auto_ids: false
