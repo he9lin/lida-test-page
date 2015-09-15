@@ -37,7 +37,9 @@ img {
   padding-left: 30px;
   margin-top: 50px;
   height: 100%;
-
+}
+.newsletter {
+    background-image: url("{{ site.baseurl }}/images/detail-bg.jpg");
 }
 .logo {
   background-image: url("{{ site.baseurl }}/images/ajg-logo.png");
